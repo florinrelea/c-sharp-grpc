@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "kLpijzw7BBEe9HgMIKVJzRshTXAwCidm2CTVttbkK9mkSwXvLhn6hY4g2SCIe2pbeuDcWbco8N9gqKTXdloSLg==",
+  "success": false,
+  "projectFilePath": "E:\\projects\\c-sharp-grpc\\GrpcServer\\GrpcServer.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package Grpc.AspNetCore. No packages exist with this id in source(s): Microsoft Visual Studio Offline Packages",
+      "libraryId": "Grpc.AspNetCore",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
+}
