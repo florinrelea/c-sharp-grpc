@@ -1,5 +1,6 @@
 ﻿using Grpc.Net.Client;
 using GrpcServer;
+using GrpcServer.Protos;
 
 namespace GrpcClient
 {
@@ -10,13 +11,19 @@ namespace GrpcClient
 
             GrpcChannel channel = GrpcChannel.ForAddress("https://localhost:7049");
 
-            var client = new Greeter.GreeterClient(channel);
+            //var client = new Greeter.GreeterClient(channel);
 
-            var input = new HelloRequest { Name = "Tim" };
+            //var input = new HelloRequest { Name = "Tim" };
 
-            var reply = await client.SayHelloAsync(input);
+            //var reply = await client.SayHelloAsync(input);
 
-            Console.WriteLine("Reply message {0}", reply.Message);
+            var customerClient = new Customer.CustomerClient(channel);
+
+            var clientRequested = new CustomerLookupModel { UserId =  1 };
+
+            var reply = await customerClient.GetCustomerInfoAsync(clientRequested);
+                
+            Console.WriteLine("Reply message {0}", reply.ToString());
 
             Console.ReadLine();
         }

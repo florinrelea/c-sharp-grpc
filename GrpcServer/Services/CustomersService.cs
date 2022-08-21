@@ -3,11 +3,11 @@ using GrpcServer.Protos;
 
 namespace GrpcServer.Services
 {
-    public class CustomerService : Customer.CustomerBase
+    public class CustomersService : Customer.CustomerBase
     {
-        private readonly ILogger<CustomerService> _logger;
+        private readonly ILogger<CustomersService> _logger;
 
-        public CustomerService(ILogger<CustomerService> logger)
+        public CustomersService(ILogger<CustomersService> logger)
         {
             _logger = logger;
         }
