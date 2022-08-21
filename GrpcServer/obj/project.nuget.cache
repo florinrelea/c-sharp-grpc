@@ -1,18 +1,29 @@
 {
   "version": 2,
-  "dgSpecHash": "kLpijzw7BBEe9HgMIKVJzRshTXAwCidm2CTVttbkK9mkSwXvLhn6hY4g2SCIe2pbeuDcWbco8N9gqKTXdloSLg==",
-  "success": false,
+  "dgSpecHash": "/adhJbGFQ3/Tgge37oA6KU6WOwpRcD6YEfy2QXIcb9R9SiGkMEUd8gtWIrjrKeOQ7CpyYYLeizPtZG0ssQ5wog==",
+  "success": true,
   "projectFilePath": "E:\\projects\\c-sharp-grpc\\GrpcServer\\GrpcServer.csproj",
-  "expectedPackageFiles": [],
-  "logs": [
-    {
-      "code": "NU1101",
-      "level": "Error",
-      "message": "Unable to find package Grpc.AspNetCore. No packages exist with this id in source(s): Microsoft Visual Studio Offline Packages",
-      "libraryId": "Grpc.AspNetCore",
-      "targetGraphs": [
-        "net6.0"
-      ]
-    }
-  ]
+  "expectedPackageFiles": [
+    "C:\\Users\\flori\\.nuget\\packages\\google.protobuf\\3.19.4\\google.protobuf.3.19.4.nupkg.sha512",
+    "C:\\Users\\flori\\.nuget\\packages\\grpc.aspnetcore\\2.47.0\\grpc.aspnetcore.2.47.0.nupkg.sha512",
+    "C:\\Users\\flori\\.nuget\\packages\\grpc.aspnetcore.server\\2.47.0\\grpc.aspnetcore.server.2.47.0.nupkg.sha512",
+    "C:\\Users\\flori\\.nuget\\packages\\grpc.aspnetcore.server.clientfactory\\2.47.0\\grpc.aspnetcore.server.clientfactory.2.47.0.nupkg.sha512",
+    "C:\\Users\\flori\\.nuget\\packages\\grpc.core.api\\2.47.0\\grpc.core.api.2.47.0.nupkg.sha512",
+    "C:\\Users\\flori\\.nuget\\packages\\grpc.net.client\\2.47.0\\grpc.net.client.2.47.0.nupkg.sha512",
+    "C:\\Users\\flori\\.nuget\\packages\\grpc.net.clientfactory\\2.47.0\\grpc.net.clientfactory.2.47.0.nupkg.sha512",
+    "C:\\Users\\flori\\.nuget\\packages\\grpc.net.common\\2.47.0\\grpc.net.common.2.47.0.nupkg.sha512",
+    "C:\\Users\\flori\\.nuget\\packages\\grpc.tools\\2.47.0\\grpc.tools.2.47.0.nupkg.sha512",
+    "C:\\Users\\flori\\.nuget\\packages\\microsoft.extensions.configuration\\3.0.3\\microsoft.extensions.configuration.3.0.3.nupkg.sha512",
+    "C:\\Users\\flori\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\3.0.3\\microsoft.extensions.configuration.abstractions.3.0.3.nupkg.sha512",
+    "C:\\Users\\flori\\.nuget\\packages\\microsoft.extensions.configuration.binder\\3.0.3\\microsoft.extensions.configuration.binder.3.0.3.nupkg.sha512",
+    "C:\\Users\\flori\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\3.0.3\\microsoft.extensions.dependencyinjection.3.0.3.nupkg.sha512",
+    "C:\\Users\\flori\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.0.3\\microsoft.extensions.dependencyinjection.abstractions.3.0.3.nupkg.sha512",
+    "C:\\Users\\flori\\.nuget\\packages\\microsoft.extensions.http\\3.0.3\\microsoft.extensions.http.3.0.3.nupkg.sha512",
+    "C:\\Users\\flori\\.nuget\\packages\\microsoft.extensions.logging\\3.0.3\\microsoft.extensions.logging.3.0.3.nupkg.sha512",
+    "C:\\Users\\flori\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.0.3\\microsoft.extensions.logging.abstractions.3.0.3.nupkg.sha512",
+    "C:\\Users\\flori\\.nuget\\packages\\microsoft.extensions.options\\3.0.3\\microsoft.extensions.options.3.0.3.nupkg.sha512",
+    "C:\\Users\\flori\\.nuget\\packages\\microsoft.extensions.primitives\\3.0.3\\microsoft.extensions.primitives.3.0.3.nupkg.sha512",
+    "C:\\Users\\flori\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512"
+  ],
+  "logs": []
 }
