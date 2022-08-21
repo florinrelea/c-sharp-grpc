@@ -1,4 +1,5 @@
-﻿using Grpc.Net.Client;
+﻿using Grpc.Core;
+using Grpc.Net.Client;
 using GrpcServer;
 using GrpcServer.Protos;
 
@@ -19,11 +20,23 @@ namespace GrpcClient
 
             var customerClient = new Customer.CustomerClient(channel);
 
-            var clientRequested = new CustomerLookupModel { UserId =  1 };
+            //var clientRequested = new CustomerLookupModel { UserId =  1 };
 
-            var reply = await customerClient.GetCustomerInfoAsync(clientRequested);
-                
-            Console.WriteLine("Reply message {0}", reply.ToString());
+            //var reply = await customerClient.GetCustomerInfoAsync(clientRequested);
+
+            var cts = new CancellationTokenSource();
+
+            using (var call = customerClient.GetNewCustomers(new NewCustomerRequest())) 
+            {
+                 while (await call.ResponseStream.MoveNext(cts.Token))
+                 {
+                    var currentCustomer = call.ResponseStream.Current;
+
+                    Console.WriteLine("Current customer {0}", currentCustomer.ToString());
+                }
+            }
+
+            Console.WriteLine("The client finished.");
 
             Console.ReadLine();
         }
